@@ -1,0 +1,63 @@
+package assignment;
+import java.util.Scanner;
+public class Bread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		double flour; double sugar;
+		double egg; double yeast;
+		double milk; double butter;
+		double chocolate; double garlic; 
+		double buttermilk; double redbean;
+		
+		System.out.print("Enter price of 1kg flour for one packet: RM");
+		flour = sc.nextDouble();
+		System.out.print("Enter price of 1kg sugar for one packet: RM");
+		sugar = sc.nextDouble();
+		System.out.print("Enter price of egg for one dozen: RM");
+		egg = sc.nextDouble();
+		System.out.print("Enter price of 11g yeast for one packet: RM");
+		yeast = sc.nextDouble();
+		System.out.print("Enter price of 1Litre milk for one carton: RM");
+		milk = sc.nextDouble();
+		System.out.print("Enter price of 250g butter for one packet: RM");
+		butter = sc.nextDouble();
+		System.out.print("Enter price of chocolate for one bar: RM");
+		chocolate = sc.nextDouble();
+		System.out.print("Enter price of 500g garlic for one bag: RM");
+		garlic = sc.nextDouble();
+		System.out.print("Enter price of 325g buttermilk for one carton: RM");
+		buttermilk = sc.nextDouble();
+		System.out.print("Enter price of 300g red bean for one bag: RM");
+		redbean = sc.nextDouble();
+		
+		double costCB = 0.125*chocolate + 0.115*flour + 0.0125*sugar + 0.5*egg + 0.19*yeast + 0.045*milk + 0.115*butter;
+		double costGB = 0.1*garlic + 0.10575*flour + 0.0095*sugar + 0.25*egg + 0.17*yeast + 0.0125*milk + 0.112*butter;
+		double costBSB = 0.035*buttermilk + 0.1125*flour + 0.01875*sugar + 0.25*egg + 0.185*yeast + 0.14*butter;
+		double costRBB = 0.1675*redbean + 0.11*flour + 0.015*sugar + 0.25*egg + 0.19*yeast + 0.025*milk + 0.08*butter;
+		
+		System.out.printf("Cost of chocolate breads is: RM%.2f" , costCB);
+		System.out.println();
+		System.out.printf("Cost of garlic bread is: RM%.2f" , costGB);
+		System.out.println();
+		System.out.printf("Cost of butter sugar bread is: RM%.2f" , costBSB);
+		System.out.println();
+		System.out.printf("Cost of red bean bread is: RM%.2f" , costRBB);
+		System.out.println();
+		
+		double priceCB = (costCB*1.2);
+		double priceGB = (costGB*1.35);
+		double priceBSB = (costBSB*1.35);
+		double priceRBB = (costRBB*1.3);
+		
+		System.out.printf("Price of chocolate bread is: RM%.2f" , priceCB);
+		System.out.println();
+		System.out.printf("Price of garlic bread is: RM%.2f" , priceGB);
+		System.out.println();
+		System.out.printf("Price of butter sugar bread is: RM%.2f" , priceBSB);
+		System.out.println();
+		System.out.printf("Price of red bean bread is: RM%.2f" , priceRBB);
+	    }
+
+	}
